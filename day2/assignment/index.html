@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Reference</h1>
+        </div>
+        <div class="links">
+            <h3>CSS</h3>
+            <ul>
+                <li><a href="#selector">Selectors</a></li>
+                <li><a href="#psudo">Sudo selectors</a></li>
+                <li><a href="#layout">Layouts</a></li>
+                <li><a href="#">Speificity & inheritance</a></li>
+                <li><a href="#box-model">Box model</a></li>
+                <li><a href="#">Positioning</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="selectors" id="selector">
+                <h1>Selectors in css</h1>
+                <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. <br>
+
+                    We can divide CSS selectors into five categories:<br>
+                    
+                    Simple selectors (select elements based on name, id, class)<br>
+                    Combinator selectors (select elements based on a specific relationship between them)<br>
+                    Pseudo-class selectors (select elements based on a certain state)<br>
+                    Pseudo-elements selectors (select and style a part of an element)<br>
+                    Attribute selectors (select elements based on an attribute or attribute value)<br>
+                    This page will explain the most basic CSS selectors.<br>
+                    </p>
+                    <h3>The CSS class Selector  </h3>
+                <p>
+                    The class selector selects HTML elements with a specific class attribute.
+                    
+                    To select elements with a specific class, write a period (.) character, followed by the class name.
+                </p>
+                <h3>The CSS id Selector</h3>
+                <p>
+                    The id selector uses the id attribute of an HTML element to select a specific element.
+                    
+                    The id of an element is unique within a page, so the id selector is used to select one unique element!
+                    
+                    To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+                </p>
+                    
+                <h3>The CSS Universal Selector</h3>
+                <p>
+                    The universal selector (*) selects all HTML elements on the page.
+                </p>
+            </div> <hr>
+            <div class="psudo" id="psudo">
+                <h1>What are Pseudo-classes?</h1>
+                <p>A pseudo-class is used to define a special state of an element.
+
+                    For example, it can be used to:
+                    
+                    Style an element when a user mouses over it
+                    Style visited and unvisited links differently
+                    Style an element when it gets focus
+                </p>
+                <h3>Pseudo-classes and HTML Classes</h3>
+                <p>
+                    Pseudo-classes can be combined with HTML classes:
+                    
+                    When you hover over the link in the example, it will change color:</p>
+            </div><hr>
+            <div id="layout">
+                <h1>Website Layout</h1>
+                <p>
+                    A website is often divided into headers, menus, content and a footer:
+                </p>
+                <p>There are tons of different layout designs to choose from. However, the structure above, is one of the most common, and we will take a closer look at it in this tutorial.
+
+                    <h3>Header</h3>
+                    A header is usually located at the top of the website (or right below a top navigation menu). It often contains a logo or the website name:</p>
+                    <p> <h3>Content</h3>
+                        The layout in this section, often depends on the target users. The most common layout is one (or combining them) of the following:
+                        
+                        1-column (often used for mobile browsers)
+                        2-column (often used for tablets and laptops)
+                        3-column layout (only used for desktops)</p>
+            </div>
+            <div id="box-model">
+            <h1>CSS Box Sizing</h1>
+               <p> The CSS box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+                
+               <h1> Without the CSS box-sizing Property</h1>
+               <p> By default, the width and height of an element is calculated like this:
+                
+                width + padding + border = actual width of an element
+                height + padding + border = actual height of an element
+                
+                This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).</p> 
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
