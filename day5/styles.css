@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.hero {
+    background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url("images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+}
+.logo {
+    color: #fff;
+    font-size: 50px;
+    margin-right: 20px;
+    float: left;
+
+}
+nav ul {
+    margin-left: 25%;
+    padding-top: 30px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'roboto',times;
+    display: flex;
+    font-weight: 200;
+}
+nav ul li a:hover {
+    color: #ed3e3e;
+}
+.btn-1 {
+    margin-left: 30px;
+    padding: 15px;
+    width: 17%;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #aaa;
+    border: none;
+    background-color: #ed3e3e;
+}
+.hero-text {
+    color: #fff;
+    font-family: 'roboto', serif;
+    margin: 15% 0 0 50px;
+    font-size: 60px;
+    letter-spacing: 3px;
+    line-height: 80px;
+}
+.btn-2 {
+    background-color: #ed3e3e;
+    border-radius: 25px;
+    color: #fff;
+    margin: 20px 0 0 5%;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+}
+.social {
+    float: right;
+    color: #fff;
+    font-family: 'roboto', times;
+    margin-right: 50px;
+
+}
+.social i {
+    font-size: 30px;
+    margin: 20px 0 0 0 ;
+    margin-right: 20px;
+}
+.social i:hover {
+    color: #ed3e3e;
+    cursor: pointer;
+}
+
+/* .carousel ------------------------------------------------------------------------------ */
+#corousel {
+    background-color: #2c3e50;
+    color: #fff;
+    width: 30vw;
+    height: auto;
+    float: right;
+    box-shadow: 1px 1px 5px #2c3e50;
+    border-radius: 5px;
+    display: none;
+}
+.corousel,.carousel-link ul li{
+    list-style-type: none;
+}
+.corousel,.carousel-link a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'roboto', serif;
+    line-height: 40px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.btn-5 {
+    width: 50%;
+    padding: 10px;
+    background-color: #ed3e3e;
+    color: #fff;
+    margin-left: 20%;
+    border-radius: 20px;
+    border: none;
+}
+.icon {
+    display: none;
+    font-size: 40px;
+    float: right;
+    color: #fff;
+    margin-right: 20px;
+}
+/* ABOUT US------------------------------------------------------------------------------ */
+.about-con {
+    margin: 5% 3% 5% 5%;
+    background-color: antiquewhite;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 100%;
+}
+.content h1{
+    font-family: 'roboto', times;
+    margin: 10px;
+    font-size: 30px;
+}
+.content p {
+    font-family: 'roboto', 'Times New Roman', Times, serif;
+    margin: 10px;
+    line-height: 25px;
+}
+.content1 {
+    margin-top: 10%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #000;
+    height: 15vh;
+    width: 80%;
+    border-radius: 5px;
+}
+.content1 i {
+    margin: 5%;
+    font-size: 25px;
+    color: #ed3e3e;
+}
+.content1 p {
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.content3 {
+    margin-top: 10%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #000;
+    height: 15vh;
+    width: 80%;
+    border-radius: 5px;
+}
+.content3 i {
+    margin: 5%;
+    font-size: 25px;
+    color: #ed3e3e;
+}
+.content3 p {
+    font-size: 20px;
+    margin-left: 5%;
+}
+.box2 {
+    margin-top: 10%;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #000;
+    height: 15vh;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* <!-- Expertises ------------------------------------------------------------------------ --> */
+.Expertises h1 {
+    margin: 150px 0  3% 5%;
+    font-size: 30px;
+    font-family: 'roboto',times;
+    text-transform: unset;
+}
+.cards {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 80% 20%;
+    margin-left: 5%;
+    margin-right: 0;
+    border-radius: 5px;
+}
+.card1 {
+    margin-right: 5%;
+    box-shadow: 2px 2px 10px rgb(99, 98, 98);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card1 h3 {
+    font-family: 'roboto', serif;
+    margin: 20px;
+    text-transform: capitalize;
+}
+.card1 p {
+    font-family: 'roboto', serif;
+    font-size: 15px;
+}
+
+/* <!-- Our products----------------------------------------------------------- --> */
+.products {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 70vh;
+}
+.products h1 {
+    margin: 150px 0  3% 5%;
+    font-family: 'roboto',serif;
+
+}
+.card {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80% 20%;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.card2 {
+    margin-right: 5%;
+    box-shadow: 2px 2px 10px rgb(99, 98, 98);
+    text-align: left;
+    cursor: pointer;
+}
+
+.card2 h3 {
+    font-family: 'roboto', serif;
+    margin: 20px;
+    text-transform: capitalize;
+    color: #ed3e3e;
+}
+.card2 p {
+    font-family: 'roboto', serif;
+    font-size: 15px;
+}
+
+/* Testimonials --------------------------------------------------------------------------------- */
+.testmonials h1 {
+    margin: 150px 0  3% 5%;
+    font-family: 'roboto',serif;
+}
+.test {  
+    height: 50vh;
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+}
+.test-img img{
+    border-radius: 50%;
+}
+.test-img h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'roboto', serif;
+    color: #ed3e3e;
+}
+.test-img hr {
+    height: 3px;
+    background-color: #ed3e3e;
+    border: none;
+
+}
+.test-content p{
+    margin: 10% 10% 0 10%;
+    font-family: 'roboto';
+    line-height: 30px;
+}
+.learnMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    color: #ed3e3e;
+    cursor: pointer;
+}
+/*Note -----------------------------------------------------------------------------------*/
+.note {
+    margin: 150px 0 0 0;
+    width: 100vw;
+    height: 30vh;
+    background-color: #2c3e50;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 100%;
+}
+.nHeading h1 {
+    margin-bottom: 30px;
+}
+.nHeading {
+    margin: 10% 0 0 10%;
+    font-family: 'roboto',serif;
+    color: #fff;
+    line-height: 30px;
+}
+.socialMedia {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 50px;
+    margin-left: 10%;
+}
+.socialMedia i {
+    color: #fff;
+    margin-left: 50px;
+}
+.socialMedia i:hover {
+    color: #ed3e3e;
+    transition: all .5s ease;
+}
+/* Blog------------------------------------------------------------------------------------ */
+.blog {
+    margin: 150px 0  3% 5%;
+    font-family: 'roboto',serif;
+}
+.blogContent {
+    margin: 5%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+}
+
+.blog-img img {
+    box-shadow: 2px 2px 10px rgb(99, 98, 98);
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.blogText {
+    margin-left: 5%;
+}
+.blogText p {
+    margin-bottom: 20px;
+}
+.blogText i {
+    color: #2c3e50;
+}
+
+/* contact---------------------------------------------------------------------------------------- */
+.contact {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: fit-content;
+}
+.contact h1 {
+    margin: 150px 0 0 5%;
+    font-family: 'roboto', serif;
+}
+.contactUs {
+    display: grid;
+    grid-template-columns: 50% 100%;
+    grid-template-rows: 100%;
+    height: fit-content;
+
+}
+.form input {
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 5px;
+}
+   
+.form textarea {
+    width: 90%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000;
+}
+.form,#name,#email {
+    margin-left: 10%;
+}
+.btn4 {
+    background-color: #ed3e3e;
+    border-radius: 25px;
+    color: #fff;
+    margin: 20px 0 0 10%;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    width: 90%;
+    cursor: pointer;
+}
+.form,.contactInfo {
+    font-family: 'roboto', times;
+    font-size: 20px;
+    color: #2c3e50;
+    margin-left: 10%;
+    line-height: 30px;
+}
+.contactInfo{
+    max-width: 30%;
+
+}
+/* footer------------------------------------------------------------------------------- */
+
+.footer {
+    margin-top: 20px;
+}
+.copywrite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copywrite p{
+    font-family: "roboto";
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.social-icons a {
+    margin-left: 2%;
+    color: #000;
+}
+.social-icons a:hover {
+    color: #ed3e3e;
+    transition: all .5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querires---------------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+    nav {
+        visibility: hidden;
+        margin: 0;
+    }
+    nav ul {
+        /* margin-left: 25%; */
+        padding-top: 0;
+    }
+    .icon {
+        display: contents;
+        float: right;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero-text {
+    margin: 1% 0 0 50px;
+    }
+    .social {
+        float: none;
+        margin: 10% 0 0 10%;
+    }
+    .social h3 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 460px) {
+    .hero h1 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-left: 15px;
+    }
+    .btn-2 {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 570px){
+    .about-con {
+        display: block;
+        background-color: antiquewhite;
+        height: 130vh;
+    }
+    .content1,.content3 {
+        margin-left: 20px;
+    }
+    .box3 {
+        margin-top: 150px;
+    }
+}
+@media (max-width: 750px) {
+    .cards {
+        display: block;
+        height: fit-content;
+    }
+    .card1 {
+        margin-top: 40px;
+    }
+    .Expertises h1 {
+        margin-top: 100px;
+    }
+    .card1 p {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    html {
+        overflow-x: auto;
+    }  
+    .products {
+        display: none;
+    }  
+    /* .products--------------------------------------------------------------------------- */
+}
+@media (max-width: 1050px) {
+    .test-content p{
+        margin: 10% 10% 0 25%;
+        font-family: 'roboto';
+        line-height: 30px;
+    }
+}
+@media (max-width: 710px) {
+    .test {
+        height: fit-content;
+        display: block;
+    }
+    .test-img h3 {
+        margin-left: 50px;
+    }
+    .test-content p {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .note {
+        display: block;
+        height: 40vh;
+    }    
+    .nHeading h1 {
+        padding-top: 30px;
+    }
+    .socialMedia {
+        margin: 20px 0 0 10px;
+    }
+    .socialMedia i {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .socialMedia {
+        margin: 0 0 0 0;
+    }
+    .socialMedia i{
+        margin: 0 25px 0 30px;
+    }
+}
+@media (max-width: 600px) {
+    .blogContent {
+        margin: 5%;
+        height: fit-content;
+        display: block;
+    }
+    .blogText {
+        margin-left: 2%;
+    }
+}
+@media (max-width: 960px) {
+    .form input {
+       width: 90%;
+    }
+}
+@media (max-width: 610px){
+    .contactUs{
+        display: block;
+        width: 100vw;
+    }
+    .form textarea{
+        margin-left: 1%;
+    }
+    .form,#name,#email {
+        margin-left: 2%;
+    }
+    .contactInfo{
+        margin-top: 20px;
+        width: 100%;
+        max-width: 80%;
+
+    }
+    .btn4 {
+        margin-left: 2%;
+    }
+}
+@media (max-width: 1180px){
+    .logo {
+        color: #000;
+    }
+}
